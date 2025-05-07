@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState, FormEvent } from 'react';
+
 
 // Business strategy categories
 const STRATEGY_CATEGORIES = [
@@ -20,9 +21,9 @@ export default function BusinessAdvisor() {
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState(null);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+     e.preventDefault();
+     setLoading(true);
     
     // Simulate API call
     setTimeout(() => {
