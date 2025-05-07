@@ -2,12 +2,14 @@
   "name": "butterfly-blue-creations",
   "version": "0.1.0",
   "private": true,
-    "scripts": {
+  "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "deploy": "npx @cloudflare/next-on-pages@latest",
-    "start": "next start",
     "lint": "next lint",
+    "start": "next start",
+    "deploy": "npx @cloudflare/next-on-pages@latest",
+    "wrangler:dev": "wrangler dev",
+    "wrangler:publish": "wrangler pages publish .vercel/output/static --project butterfly-blue-creations"
   },
   "dependencies": {
     "@preact/signals": "^2.0.4",
