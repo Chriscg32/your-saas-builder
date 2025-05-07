@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "vercel-build": "next build",
     "deploy": "npx @cloudflare/next-on-pages@latest",
     "start": "next start",
     "lint": "next lint"
@@ -34,6 +35,7 @@
     "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {
+    "vercel": "^41.7.0",
     "@cloudflare/next-on-pages": "^1.13.12",
     "@testing-library/react": "^14.0.0",
     "@types/node": "20.10.6",
