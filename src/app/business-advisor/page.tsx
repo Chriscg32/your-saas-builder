@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, FormEvent } from 'react';
+interface BusinessInsights {  businessSummary: string;  opportunityScore: number;  strategies: Array<{ title: string; description: string; recommendations: string[] }>;   executionPlan: { phase1: string; phase2: string; phase3: string };   competitiveAdvantage: string;  marketTrends: string[];}# 2c) Type the useState and the handler
 
 // --- 1. Define your Insights interface ---
 interface Insights {
