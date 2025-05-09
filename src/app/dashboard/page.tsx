@@ -1,3 +1,15 @@
+interface AssessmentIssue {
+  id: string;
+  severity: "high" | "medium" | "low";
+  description: string;
+  recommendation: string;
+  zerobudgetSolution: string;
+}
+interface AssessmentResult {
+  timestamp: string;
+  riskScore: number;
+  issues: AssessmentIssue[];
+}
 "use client";
 
 import { useState, useEffect } from "react";
