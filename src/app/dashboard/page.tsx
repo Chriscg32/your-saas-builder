@@ -136,7 +136,7 @@ export default function Dashboard() {
   const [isLoading, setIsLoading] = useState(true);
   const [showRiskAssessment, setShowRiskAssessment] = useState(false);
   const [assessmentProgress, setAssessmentProgress] = useState(0);
-  const [assessmentResults, setAssessmentResults] = useState(null);
+ const [assessmentResults, setAssessmentResults] = useState<AssessmentResult | null>(null);
   
   useEffect(() => {
     // Simulate loading data
